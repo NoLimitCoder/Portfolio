@@ -41,8 +41,12 @@ const Portfolio = () => {
                                     <h4 className="description">{port.description}</h4>
                                     <button
                                         className="btn"
-                                        onClick={() => window.open(port.url)}
-                                    >View</button>
+                                        onClick={() => window.open(port.srcCodeUrl)}
+                                    >Github</button>
+                                    <button
+                                        className="btn"
+                                        onClick={() => window.open(port.LiveDemoUrl)}
+                                    >Live Demo</button>
                                 </div>
                             </div>
                         )

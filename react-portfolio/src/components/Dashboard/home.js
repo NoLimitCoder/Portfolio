@@ -12,8 +12,9 @@ const Home = () => {
         e.preventDefault();
         const name = form.current[0]?.value;
         const description = form.current[1]?.value;
-        const url = form.current[2]?.value;
-        const image = form.current[3]?.files[0];
+        const srcCodeUrl = form.current[2]?.value;
+        const LiveDemoUrl = form.current[3]?.value;
+        const image = form.current[4]?.files[0];
 
         const storageRef = ref(storage, `portfolio/${image.name}`);
 
@@ -23,7 +24,8 @@ const Home = () => {
                     savePortfolio({
                         name,
                         description,
-                        url,
+                        srcCodeUrl,
+                        LiveDemoUrl,
                         image: downloadUrl
                     })
                 }, (error) => {
@@ -31,7 +33,8 @@ const Home = () => {
                     savePortfolio({
                         name,
                         description,
-                        url,
+                        srcCodeUrl,
+                        LiveDemoUrl,
                         image: null
                     })
                 })
@@ -40,7 +43,8 @@ const Home = () => {
                 savePortfolio({
                     name,
                     description,
-                    url,
+                    srcCodeUrl,
+                    LiveDemoUrl,
                     image: null
                 })
             }
@@ -63,7 +67,8 @@ const Home = () => {
             <form ref={form} onSubmit={submitPortfolio}>
                 <p><input type="text" placeholder="Name" /></p>
                 <p><textarea placeholder="Description" /></p>
-                <p><input type="text" placeholder="Url" /></p>
+                <p><input type="text" placeholder="srcCodeUrl" /></p>
+                <p><input type="text" placeholder="LiveDemoUrl" /></p>
                 <p><input type="file" placeholder="Image" /></p>
                 <button type="submit">Submit</button>
                 <button onClick={() => auth.signOut()}>Sign out</button>
