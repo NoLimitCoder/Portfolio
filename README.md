@@ -25,11 +25,10 @@ To run the project on your local machine, follow these steps:
 
 The project should now be running on http://localhost:3000/.
 ## Features
-
-    Responsive design for optimal viewing on all devices
-    Dynamic navigation bar
-    Animated skills section
-    Clean and professional layout
+- Responsive design for optimal viewing on all devices
+- Dynamic navigation bar
+- Animated skills section
+- Clean and professional layout
 
 ## Customization
 
@@ -42,10 +41,10 @@ Contact
 If you have any questions or issues, please feel free to contact me through my GitHub profile or at my email address.
 Built With
 
-    ReactJS
-    HTML
-    CSS
-    JavaScript
+- ReactJS
+- HTML
+- CSS
+- JavaScript
 
 
 ## Thank you for visiting my ReactJS Portfolio project!
